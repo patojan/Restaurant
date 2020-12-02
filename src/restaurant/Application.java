@@ -11,7 +11,7 @@ import javax.swing.*;
 public class Application {
     public final static int WARNING_MESSAGE = 2;
 
-    private static final int numberOfTables = 20;
+    private static final int NUMBER_OF_TABLES = 20;
 
     private static MainWindow window;
     private static AddItemWindow addWindow;
@@ -19,7 +19,7 @@ public class Application {
     public static void init() {
         window = new MainWindow();
 
-        Business.init(numberOfTables);
+        Business.init(NUMBER_OF_TABLES);
         Catalogue.init();
 
         //Panel 1
